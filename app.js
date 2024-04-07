@@ -82,9 +82,10 @@ function checkAns(idx){
 }
 
 
-function btnPress(){
+function btnPress(e){
     console.log(this);
-   let btn=this;
+    e.preventDefault();
+   let btn=event.target;
    userFlash(btn);
   
    userColor=btn.getAttribute("id");
@@ -95,7 +96,7 @@ function btnPress(){
 let allBtns=document.querySelectorAll(".btn");
 for(btn of allBtns){
     btn.addEventListener("click",btnPress);
-    
+    btn.addEventListener("touchstart",btnPress);
 }
     
 
