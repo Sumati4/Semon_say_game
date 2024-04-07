@@ -98,7 +98,7 @@ for(btn of allBtns){
     btn.addEventListener("touchstart", btnPress);
 }
     
-}
+
 
 
 function reset(){
