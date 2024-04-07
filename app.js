@@ -19,6 +19,15 @@ if(started== false){
     h2s.innerText="";
 }
 });
+document.addEventListener("touchstart",function(){
+    if(started== false){
+        console.log("game stared");
+        started=true;
+       
+        levelUp();
+        h2s.innerText="";
+    }
+    });
 function btnFlash(btn){
     btn.classList.add("flash");
     setTimeout(function(){
@@ -86,6 +95,7 @@ function btnPress(){
 let allBtns=document.querySelectorAll(".btn");
 for(btn of allBtns){
     btn.addEventListener("click",btnPress);
+    btn.addEventListener("touchstart", btnPress);
 }
 
 
