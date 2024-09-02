@@ -1,5 +1,10 @@
 # Semon_say_game
 
+## Live Demo
+
+You can view the live demo of this project at [https://sumati4.github.io/Semon_say_game/](https://sumati4.github.io/Semon_say_game/).
+
+
 ## Overview:-
 Simon Says is a memory game where players need to remember and repeat a sequence of colors or sounds. The game starts with a sequence of colors displayed by the game, and the player needs to repeat the same sequence to advance to the next level. The difficulty increases with each level as the sequence becomes longer.
 
